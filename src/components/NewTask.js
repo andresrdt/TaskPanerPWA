@@ -8,6 +8,7 @@ import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
+import { Redirect } from "react-router-dom";
 
 export default function AddressForm() {
     const useStyles = makeStyles(theme => ({
@@ -95,7 +96,13 @@ export default function AddressForm() {
                             }}
                         />
                     </Grid>
+                    <Grid>
+                        <Button variant="contained" color="primary" href="#contained-buttons">
+                            Crear
+                        </Button>
+                    </Grid>
                 </Grid>
+
 
             </React.Fragment>
         </Container>

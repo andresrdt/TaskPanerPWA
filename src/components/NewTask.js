@@ -12,14 +12,14 @@ import MenuItem from '@material-ui/core/MenuItem';
 export default function AddressForm() {
     const useStyles = makeStyles(theme => ({
         button: {
-          display: 'block',
-          marginTop: theme.spacing(2),
+            display: 'block',
+            marginTop: theme.spacing(2),
         },
         formControl: {
-          margin: theme.spacing(1),
-          minWidth: 120,
+            margin: theme.spacing(1),
+            minWidth: 120,
         },
-      }));
+    }));
     const classes = useStyles();
     const [Estado, setEstado] = React.useState('');
     const [open, setOpen] = React.useState(false);
@@ -35,6 +35,7 @@ export default function AddressForm() {
     const handleOpen = () => {
         setOpen(true);
     };
+    const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
     return (
         <Container maxWidth="sm">
             <React.Fragment>
@@ -81,6 +82,18 @@ export default function AddressForm() {
                             <MenuItem value={20}>InProgress</MenuItem>
                             <MenuItem value={30}>Done</MenuItem>
                         </Select>
+                    </Grid>
+                    <Grid>
+                        <TextField
+                            id="date"
+                            label="Fecha"
+                            type="date"
+                            defaultValue="2017-05-24"
+                            className={classes.textField}
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                        />
                     </Grid>
                 </Grid>
 

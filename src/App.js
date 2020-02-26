@@ -1,29 +1,47 @@
 import React, { Component } from 'react';
-import './App.css'; 
-import {Login} from "./components/Login";
-import NavigationDrawer from "./components/NavigationDrawer";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import NewTask from './components/NewTask';
+import './App.css';
+import { Login } from './components/Login';
+import  Home  from './components/Home';
+import  CreateAccount  from './components/CreateAccount';
+import  {UserProfile}  from './components/UserProfile';
+import  TodoApp from './TodoApp';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        localStorage.setItem('username','andy');
-        localStorage.setItem('password','12345');
-    }
+  constructor(props) {
+    super(props);  
+    localStorage.setItem('isLogged',false);
+    localStorage.setItem('username','andy@mail.com');
+    localStorage.setItem('password','12345');
+   }
 
-    render() {
-        return (
-           
-          <Router>
-          <div className="App">
-            <Route path="/" exact component={Login} />
-            <Route path="/Drawer" exact component={NavigationDrawer} />  
-            <Route path="/NewTask" exact component={NewTask} />  
-          </div>
-        </Router>
-        );
-    }
+  render() {
+    const LoginView = () => (
+      <Login />
+    );
+
+    const TodoAppView = () => (
+      <TodoApp />
+    );
+    
+    const MainView = () => (
+      <Home />
+    );
+    const UserProfileView = () => (
+      <UserProfile />
+    );
+    return (
+      <Router>
+        <div className="App">             
+            <Route exact path="/" component={LoginView} />
+            <Route  exact  path="/todo" component={TodoAppView} />
+            <Route  exact  path="/Home" component={MainView} />
+            <Route  exact  path="/profile" component={UserProfileView} />
+            <Route  exact  path="/Createaccount" component={CreateAccount} />         
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

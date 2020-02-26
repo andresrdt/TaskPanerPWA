@@ -1,0 +1,64 @@
+[debug] [2020-02-26T20:27:20.856Z] ----------------------------------------------------------------------
+[debug] [2020-02-26T20:27:20.860Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anrodriguez\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-02-26T20:27:20.860Z] CLI Version:   7.13.1
+[debug] [2020-02-26T20:27:20.860Z] Platform:      win32
+[debug] [2020-02-26T20:27:20.860Z] Node Version:  v10.16.3
+[debug] [2020-02-26T20:27:20.863Z] Time:          Wed Feb 26 2020 15:27:20 GMT-0500 (GMT-05:00)
+[debug] [2020-02-26T20:27:20.863Z] ----------------------------------------------------------------------
+[debug] [2020-02-26T20:27:20.863Z] 
+[debug] [2020-02-26T20:27:20.879Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-26T20:27:20.880Z] > authorizing via signed-in user
+[debug] [2020-02-26T20:27:20.880Z] [iam] checking project taskplanerpwa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-26T20:27:20.884Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/taskplanerpwa:testIamPermissions  
+
+[debug] [2020-02-26T20:27:22.043Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-26T20:27:22.047Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskplanerpwa  
+ 
+[debug] [2020-02-26T20:27:22.401Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'taskplanerpwa'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-02-26T20:27:22.415Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/taskplanerpwa/versions  
+
+[debug] [2020-02-26T20:27:32.829Z] Error: Client network socket disconnected before secure TLS connection was established
+    at TLSSocket.onConnectEnd (_tls_wrap.js:1095:19)
+    at Object.onceWrapper (events.js:286:20)
+    at TLSSocket.emit (events.js:203:15)
+    at TLSSocket.EventEmitter.emit (domain.js:448:20)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
+[debug] [2020-02-26T20:27:42.125Z] ----------------------------------------------------------------------
+[debug] [2020-02-26T20:27:42.128Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anrodriguez\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-02-26T20:27:42.128Z] CLI Version:   7.13.1
+[debug] [2020-02-26T20:27:42.128Z] Platform:      win32
+[debug] [2020-02-26T20:27:42.128Z] Node Version:  v10.16.3
+[debug] [2020-02-26T20:27:42.130Z] Time:          Wed Feb 26 2020 15:27:42 GMT-0500 (GMT-05:00)
+[debug] [2020-02-26T20:27:42.131Z] ----------------------------------------------------------------------
+[debug] [2020-02-26T20:27:42.131Z] 
+[debug] [2020-02-26T20:27:42.145Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-26T20:27:42.146Z] > authorizing via signed-in user
+[debug] [2020-02-26T20:27:42.146Z] [iam] checking project taskplanerpwa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-26T20:27:42.149Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/taskplanerpwa:testIamPermissions  
+
+[debug] [2020-02-26T20:27:42.754Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-26T20:27:42.756Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskplanerpwa  
+ 
+[debug] [2020-02-26T20:27:43.106Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'taskplanerpwa'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-02-26T20:27:43.117Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/taskplanerpwa/versions  
+
+[debug] [2020-02-26T20:27:53.472Z] Error: Client network socket disconnected before secure TLS connection was established
+    at TLSSocket.onConnectEnd (_tls_wrap.js:1095:19)
+    at Object.onceWrapper (events.js:286:20)
+    at TLSSocket.emit (events.js:203:15)
+    at TLSSocket.EventEmitter.emit (domain.js:448:20)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
